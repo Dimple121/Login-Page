@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        </style>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Dancing Script', cursive;
+        }
+        .box{
+            text-align: center;
+            position: relative;
+            height: 470px;
+            border-radius: 7px;
+            width: 370px;
+            overflow: hidden;
+            content: '';
+            filter: drop-shadow(0 0 20px rgb(219, 187, 241));
+            background-color: rgb(240, 246, 246);
+        }
+        input[type=email],input[type=password]{
+            position: relative;
+            top: -28px;
+            text-align: center;
+            font-size: 17px;
+            padding: 10px 30px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid rgb(166, 168, 169);
+            font-family: 'Dancing Script', cursive;
+        }
+        input[type=email]:focus{
+            border-bottom: 2px solid rgb(67, 207, 228);
+        }
+        input[type=password]:focus{
+            border-bottom: 2px solid rgb(67, 207, 228);
+        }
+        .circle1{
+            width: 170px;
+            height: 170px;
+            background:radial-gradient(circle at top left,rgb(178, 85, 245),rgb(156, 40, 239),rgb(67, 207, 228),skyblue);
+            border-radius: 50%;
+            position: absolute;
+            left: 300px;
+            top: 20px;
+        }
+        .circle2{
+            width: 160px;
+            height: 160px;
+            background:radial-gradient(circle at top right,rgb(178, 85, 245),rgb(156, 40, 239),rgb(67, 207, 228),skyblue);
+            border-radius: 50%;
+            position: absolute;
+            left: -90px;
+            top: 290px;
+        }
+        input[type=submit]{
+            background: linear-gradient(to right,rgb(246, 62, 224),rgb(113, 12, 185));
+            padding: 10px 60px;
+            font-size: 18px;
+            border: 0;
+            color: white;
+            border-radius: 3px;
+            position: relative;
+            font-family: 'Dancing Script', cursive;
+        }
+        .container{
+            position: relative;
+            left: calc(50% - 185px);
+            top: calc(50% - 135px);
+        }
+        .login{
+            font-size: 40px;
+            position: relative;
+            top: -30px;
+            left: -20px;
+            float: left;
+            overflow: hidden;
+            width: 300px;
+            color: rgb(37, 185, 244);
+        }
+        .login p{
+            position: relative;
+            left: 50px;
+            font-weight: 300;
+            font-size: 15px;
+            color: black;
+        }
+        .notice{
+            font-size: 15px;
+            /* margin-top: 25px; */
+        }
+        .notice a{
+            color: rgb(67, 207, 228);
+            font-size: 15px;
+            text-decoration: none;
+        }
+        .notice1{
+            margin-top: 22px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="container">
+        <h1 class="login">Login
+            <p>Enter your details below to continue</p>
+        </h1>
+        <input type="email" placeholder="Email Address">
+        <input type="password" placeholder="Password" >
+        <input type="submit" value="Login">
+        <!-- <input type="checkbox"> -->
+        <!-- <p class="notice1">Forget Password</p> -->
+        <p class="notice">Don't have a account? <a href="">SignUp</a></p>
+        </div>
+        </div>
+    </div>    
+</body>
+</html>
